@@ -1,0 +1,10 @@
+DirectoryIndex home.html //задать стартовую страницу, а ниже кэш
+
+<IfModule mod_expires.c>
+ExpiresActive On
+
+<FilesMatch "\.(jpg|jpeg|png|gif|svg)$">
+ExpiresDefault "access plus 1 month"
+</FilesMatch>
+
+</IfModule>
